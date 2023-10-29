@@ -1,7 +1,12 @@
 import bson
 import datetime
 import json
+import pymongo
 from dateutil.relativedelta import relativedelta
+
+client = pymongo.MongoClient("mongodb://localhost:27017")
+db = client["mydatabase"]
+collection = db["mycollection"]
 
 
 def aggregate_data(dt_from, dt_upto, group_type):
