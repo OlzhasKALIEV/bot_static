@@ -1,10 +1,14 @@
 import json
+import os
+
 import telebot
+from dotenv import load_dotenv
 
 from static_func import aggregate_data
 
+load_dotenv()
 
-token = '6774875305:AAGMQDsirRSxdea67AOkVdHPdlo8NyJBwA0'
+token = os.getenv('TOKEN')
 bot = telebot.TeleBot(token)
 
 

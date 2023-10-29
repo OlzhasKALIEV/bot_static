@@ -1,7 +1,6 @@
 # bot_static
 
 Клонирование проекта: git clone: https://github.com/OlzhasKALIEV/bot_static.git
-Установка зависимостей: python install -r .\requirements.txt
-Создание виртуального окружения: python -m venv venv
-Запуск виртуального окружения: .\venv\Scripts\activate
-Запуск бота: python .\main.py
+Перейти в проект: cd ./bot_static
+В корневой директории создать файл .env и разместить свой TOKEN (Выдача токена https://t.me/BotFather инструкция https://www.cossa.ru/instahero/321374/)
+Запуск бота: docker-compose up
